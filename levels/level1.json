@@ -1,0 +1,47 @@
+[
+    {
+        "x": 0,
+        "y": 5,
+        "tile": "Ground"
+    },
+    {
+        "x": 1,
+        "y": 5,
+        "tile": "Ground"
+    },
+    {
+        "x": 2,
+        "y": 5,
+        "tile": "Ground"
+    },
+    {
+        "x": 3,
+        "y": 5,
+        "tile": "Spike"
+    },
+    {
+        "x": 4,
+        "y": 5,
+        "tile": "Movable Block"
+    },
+    {
+        "x": 5,
+        "y": 5,
+        "tile": "Button"
+    },
+    {
+        "x": 6,
+        "y": 5,
+        "tile": "Wall"
+    },
+    {
+        "x": 7,
+        "y": 5,
+        "tile": "Target"
+    },
+    {
+        "x": 0,
+        "y": 4,
+        "tile": "Player Start"
+    }
+]

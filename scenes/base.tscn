@@ -1,20 +1,31 @@
-[gd_scene load_steps=3 format=3 uid="uid://kp3ltuw54tex"]
+[gd_scene load_steps=6 format=3 uid="uid://kp3ltuw54tex"]
 
 [ext_resource type="PackedScene" uid="uid://cf0e3ot2d7n7r" path="res://scenes/player.tscn" id="1_pvqg0"]
+[ext_resource type="Script" uid="uid://btwuehgd4efjo" path="res://scripts/level_gen.gd" id="1_t45w4"]
+[ext_resource type="Texture2D" uid="uid://b1gvxnibpbvvx" path="res://assets/sprites/platforms.png" id="2_baglu"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_pvqg0"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t45w4"]
+resource_name = "Ground"
+texture = ExtResource("2_baglu")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 2.66667, -8, 2.66667)
 
-[node name="base" type="Node2D"]
+[sub_resource type="TileSet" id="TileSet_h5ip5"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_t45w4")
+
+[node name="base" type="Node2D" node_paths=PackedStringArray("tile_map")]
+script = ExtResource("1_t45w4")
+tile_map = NodePath("TileMap")
 
 [node name="player" parent="." instance=ExtResource("1_pvqg0")]
 position = Vector2(97, 84)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(145, 82)
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(1, -7)
 zoom = Vector2(4, 4)
+position_smoothing_enabled = true
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(98, 96)
-shape = SubResource("WorldBoundaryShape2D_pvqg0")
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_h5ip5")
+format = 2

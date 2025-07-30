@@ -1,0 +1,82 @@
+[
+	{
+		"x": 0,
+		"y": 8,
+		"tile": "Ground"
+	},
+	{
+		"x": 1,
+		"y": 8,
+		"tile": "Ground"
+	},
+	{
+		"x": 2,
+		"y": 8,
+		"tile": "Ground"
+	},
+	{
+		"x": 3,
+		"y": 8,
+		"tile": "Ground"
+	},
+	{
+		"x": 4,
+		"y": 8,
+		"tile": "Ground"
+	},
+	{
+		"x": 5,
+		"y": 8,
+		"tile": "Ground"
+	},
+	{
+		"x": 6,
+		"y": 8,
+		"tile": "Ground"
+	},
+	{
+		"x": 7,
+		"y": 8,
+		"tile": "Ground"
+	},
+	{
+		"x": 8,
+		"y": 8,
+		"tile": "Ground"
+	},
+	{
+		"x": 9,
+		"y": 8,
+		"tile": "Ground"
+	},
+	{
+		"x": 10,
+		"y": 8,
+		"tile": "Ground"
+	},
+	{
+		"x": 11,
+		"y": 8,
+		"tile": "Ground"
+	},
+	{
+		"x": 12,
+		"y": 8,
+		"tile": "Ground"
+	},
+	{
+		"x": 13,
+		"y": 8,
+		"tile": "Ground"
+	},
+	{
+		"x": 14,
+		"y": 8,
+		"tile": "Ground"
+	},
+	{
+		"x": 15,
+		"y": 8,
+		"tile": "Ground"
+	}
+]
